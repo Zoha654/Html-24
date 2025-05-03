@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <h1>conditional programming in Java Script</h1>
+    <p>click button to get time based greeting</p>
+    <button onclick="abc()">try me</button>
+    <p id="h"></p>
+    <p id="g"></p>
+    <script>
+        function abc() {
+            var t = new Date().getHours()
+            if (t < 10) {
+                gr = "good morning"
+            }
+            else if (t < 20) {
+                gr = "good day"
+            }
+            else {
+                gr = "good evening"
+            }
+            document.getElementById("h").innerHTML = "current hour is:" + t
+            document.getElementById("g").innerHTML = gr
+        }
+
+    </script>
+</body>
+
+</html>

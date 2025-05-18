@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    <h1>Printing random numbers</h1>
+    <p id="num"></p>
+    <button onclick="getRandomInt(1,100)">print random numbers from 1 to 100</button>
+
+    <script>
+        function getRandomInt(min, max) {
+            document.getElementById("num").innerHTML = Math.floor(Math.random() * (max - min)) + min;
+        }
+
+    </script>
+</body>
+
+</html>
